@@ -1,0 +1,20 @@
+apt update && apt install -y nano git whiptail && cd /root && git clone https://github.com/Sherif-khaled/9Hits-AutoInstall.git && chmod -R 777 9Hits-AutoInstall && 9Hits-AutoInstall/install.sh "1" "d87fcfcd0c7a193e537a8a8b8c272dae"
+
+
+nano /root/9Hits/9HitsViewer_x64/settings.json
+
+cd 9Hits
+
+./manage.sh
+
+killall vnc
+
+M7md@32100
+Zeko@32100
+d87fcfcd0c7a193e537a8a8b8c272dae
+
+====================================================
+crontab -e
+@reboot /root/9Hits/start9hits.sh
+
+rm -r ~/.config/9hits-viewer && pkill vnc && vncserver
